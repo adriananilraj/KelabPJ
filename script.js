@@ -17,3 +17,21 @@ menuBtn.onclick = function() {
 const currentYearElement = document.getElementById('thisYear');
 const currentYear = new Date().getFullYear();
 currentYearElement.textContent = currentYear;
+
+
+// Navbar Container 
+var Navbar = document.getElementById('NavbarContainer');
+var NavbarWeb = document.getElementById('navbarWeb');
+
+window.addEventListener('resize', function() {
+    var screenWidth = window.innerWidth;
+    if (screenWidth <= 770) {
+        NavbarWeb.style.display = 'none';
+        Navbar.style.display = 'block';
+        console.log('Mobile');
+    } else {
+        NavbarWeb.style.display = 'block'
+        Navbar.style.display = 'none';
+    }
+  });
+  
