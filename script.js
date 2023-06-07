@@ -26,12 +26,16 @@ var screenWidth = window.innerWidth;
 window.addEventListener('resize', function() {
     
     if (screenWidth <= 770) {
-        NavbarWeb.style.display = 'none';
-        Navbar.style.display = 'block';
-        console.log('Mobile');
+        // NavbarWeb.remove();
+        // Navbar.appendChild(element);
+        // NavbarWeb.style.display = 'none';
+        // Navbar.style.display = 'block';
+        // console.log('Mobile');
     } else {
-        NavbarWeb.style.display = 'block'
-        Navbar.style.display = 'none';
+        // Navbar.remove()
+        // NavbarWeb.appendChild(element);
+        // NavbarWeb.style.display = 'block'
+        // Navbar.style.display = 'none';
     }
 });
 
@@ -40,11 +44,13 @@ window.addEventListener('resize', function() {
     // Handle If Load Responsive
     console.log('work')
     if (screenWidth <= 770) {
-        NavbarWeb.style.display = 'none';
-        Navbar.style.display = 'block';
+        
+        // NavbarWeb.style.display = 'none';
+        // Navbar.style.display = 'block';
     } else {
-        NavbarWeb.style.display = 'block'
-        Navbar.style.display = 'none';
+        Navbar.remove()
+        // NavbarWeb.style.display = 'block'
+        // Navbar.style.display = 'none';
     }
 })();
 
